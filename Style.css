@@ -121,9 +121,13 @@ html{
     margin: 5px 0;
 }
 .home .home-content .text-3{
-    color: gold;
+    color: crimson;
     font-weight: 500;
     font-size: 35px;
+    font-weight: 1000;
+}
+.typing-1{
+    color:gold;
 }
 .home .home-content a{
     display:inline-block;
@@ -170,7 +174,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%; 
-    width: 180px;
+    width: 220px;
     height: 3px;
     background: #111;
     transform: translateX(-50%)
@@ -201,6 +205,9 @@ footer span a:hover{
 
  /* about section styling */
  
+ li{
+     font-size: 20px;
+ }
  
  
 
@@ -215,6 +222,7 @@ footer span a:hover{
      width: 400px;
      object-fit: cover;
      border-radius: 6px;
+     border: 5px solid black;
  }
  .about .about-content .right{
      width: 55%;
@@ -261,7 +269,7 @@ footer span a:hover{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "What i provide ";
+    content: "งานอดิเรก ";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -284,7 +292,7 @@ footer span a:hover{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: coral;
+    color: #C91C73;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -300,7 +308,7 @@ footer span a:hover{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "ประสบการณ์และความรู้";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -361,7 +369,7 @@ footer span a:hover{
 
 }
 .skills-content .right .html::before{
-    width: 50%;
+    width: 60%;
 }
 .skills-content .right .css::before{
     width: 50%;
@@ -375,6 +383,13 @@ footer span a:hover{
 .teams .title::after{
     content: "กิจกรรม";
 }
+
+.teams #sub-topic::after{
+    content: "เกีตรติบัตร";
+}
+
+
+
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -405,12 +420,12 @@ footer span a:hover{
     width: 300px;
     object-fit: cover;
     border-radius: 10%;
-    border: 5px solid coral;
+    border: 5px solid black;
     transition: all 0.3s ease;
    
 }
 .teams .carousel .card:hover img{
-    border-color: red;
+    border-color: #fff;
 }
 .owl-dots{
     text-align: center;
@@ -439,7 +454,7 @@ footer span a:hover{
 
 /* contact section styling */
 .contact .title::after{
-    content: "KUYRAISUS";
+    content: "ติดต่อฉัน";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -483,6 +498,7 @@ footer span a:hover{
     width: 100%;
     margin-bottom: 15px;
 }
+
 .contact .right form .textarea{
     height: 80px;
     width: 100%;
@@ -507,6 +523,7 @@ footer span a:hover{
 .contact .right form .textarea textarea{
     padding-top: 10px;
     resize: none;
+    padding: 80px;
 }
 .contact .right form .button{
     height: 48px;
@@ -530,7 +547,9 @@ footer span a:hover{
 
 }
 
-
+.carousel.owl-carousel.owl-loaded.owl-drag{
+    z-index: 0;
+}
 
 
 /*responsive media query start*/

@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
@@ -11,6 +12,19 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
+
+    //medium
+    mediumZoom('.zoom', {
+        margin : 50
+    })
+
+    mediumZoom('.zoom-dark', {
+        background : '#000'
+    })
+    
+
+
+
 
     //slide-up script
 
@@ -26,14 +40,15 @@ $(document).ready(function(){
     });
 
     // typing animation script
-    var typed = new Typed(".typing-1",{
+    var typed1 = new Typed(".typing-1",{
         strings: ["Poom" ],
         typedSpeed: 100,
         backSpeed: 60,
         loop: true,
+        
     });
 
-    var typed = new Typed(".typing-2",{
+    var typed2 = new Typed(".typing-2",{
         strings: ["Poom", ],
         typedSpeed: 100,
         backSpeed: 60,
