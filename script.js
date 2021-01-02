@@ -13,9 +13,10 @@ $(document).ready(function(){
         }
     });
 
-    //medium
+    //medium zoom
     mediumZoom('.zoom', {
-        margin : 50
+        margin : 50,
+        scrollOffset : 200	    
     })
 
     mediumZoom('.zoom-dark', {
@@ -42,16 +43,16 @@ $(document).ready(function(){
     // typing animation script
     var typed1 = new Typed(".typing-1",{
         strings: ["Poom" ],
-        typedSpeed: 100,
-        backSpeed: 60,
+        typedSpeed: 180,
+        backSpeed: 80,
         loop: true,
         
     });
 
     var typed2 = new Typed(".typing-2",{
         strings: ["Poom", ],
-        typedSpeed: 100,
-        backSpeed: 60,
+        typedSpeed: 180,
+        backSpeed: 80,
         loop: true,
     });
 
@@ -62,8 +63,8 @@ $(document).ready(function(){
         margin: 20,
         loop: true,  
         autoplay:true,
-        autoplaySpeed: 800,
-        autoplayTimeout: 2000,
+        autoplaySpeed: 5000,
+        autoplayTimeout: 6000,
         autoplayHoverPause: true,
         responsive: {
             0:{

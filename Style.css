@@ -82,7 +82,7 @@ html{
      text-align: center;
      line-height: 43px;
      color: #fff;
-     z-index: 30px;
+     z-index: 0;
      font-size: 30px;
      border-radius: 6px;
      cursor: pointer;
@@ -212,7 +212,7 @@ footer span a:hover{
  
 
 .about .title::after{
-    content: "Who i am";
+    content: "เกี่ยวกับฉัน";
 }
 .about .about-content .left{
     width: 45%;
@@ -223,6 +223,7 @@ footer span a:hover{
      object-fit: cover;
      border-radius: 6px;
      border: 5px solid black;
+
  }
  .about .about-content .right{
      width: 55%;
@@ -257,6 +258,7 @@ footer span a:hover{
 }
 
 
+
 /* service section styling */
 .services, .teams{
     color: #fff;
@@ -269,7 +271,7 @@ footer span a:hover{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "งานอดิเรก ";
+    content: "การศึกษา ";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -384,7 +386,7 @@ footer span a:hover{
     content: "กิจกรรม";
 }
 
-.teams #sub-topic::after{
+.teams #certificate::after{
     content: "เกีตรติบัตร";
 }
 
@@ -395,7 +397,6 @@ footer span a:hover{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-
 }
 .teams .carousel .card:hover{
     background: chocolate;
