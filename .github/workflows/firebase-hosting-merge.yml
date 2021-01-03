@@ -14,8 +14,8 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TESTING021 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KITTIPONGP_E5C51 }}'
           channelId: live
-          projectId: testing021
+          projectId: kittipongp-e5c51
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
